@@ -4,12 +4,7 @@ import  java.lang.Math;
 
 public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
-        double deltaX = x1 - x2;
-        double deltaY = y2 - y1;
-        double powDeltaX = Math.pow(deltaX, 2);
-        double powDeltaY = Math.pow(deltaY, 2);
-        double sum = powDeltaX + powDeltaY;
-        double rsl = Math.sqrt(sum);
+        double rsl = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         return rsl;
     }
 
