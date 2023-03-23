@@ -13,6 +13,7 @@ public class SwitchArrayTest {
         int[] expected = {4, 2, 3, 1};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenSwap2to3() {
         int[] input = {10, 22, 345, 455, 7054};
@@ -22,6 +23,7 @@ public class SwitchArrayTest {
         int[] expected = {10, 22, 455, 345, 7054};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenSwap5to3() {
         int[] input = {10, 22, 455, 345, 7054, 17, 99};
