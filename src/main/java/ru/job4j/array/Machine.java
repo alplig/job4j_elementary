@@ -11,14 +11,10 @@ public class Machine {
         int shortChange = money - price;
 
         for (int coin : coins) {
-            while (shortChange > 0) {
-                if (shortChange >= coin) {
-                    shortChange -= coin;
-                    size++;
-                    rsl[size - 1] = coin;
-                } else {
-                    break;
-                }
+            while (shortChange >= coin) {
+                shortChange -= coin;
+                size++;
+                rsl[size - 1] = coin;
             }
         }
         return Arrays.copyOf(rsl, size);
