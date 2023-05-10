@@ -1,7 +1,8 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
+
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class PointTest {
     @Test
@@ -10,7 +11,7 @@ public class PointTest {
         Point a = new Point(0, 0);
         Point b = new Point(0, 2);
         double out = a.distance(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -19,7 +20,7 @@ public class PointTest {
         Point a = new Point(0, 0);
         Point b = new Point(0, 0);
         double out = a.distance(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -28,7 +29,7 @@ public class PointTest {
         Point a = new Point(1, 0);
         Point b = new Point(0, 0);
         double out = a.distance(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -37,7 +38,7 @@ public class PointTest {
         Point a = new Point(9, 9);
         Point b = new Point(9, 9);
         double out = a.distance(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -46,7 +47,7 @@ public class PointTest {
         Point a = new Point(0, 0, 0);
         Point b = new Point(0, 0, 0);
         double out = a.distance3d(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -55,7 +56,7 @@ public class PointTest {
         Point a = new Point(0, 0, 0);
         Point b = new Point(1, 1, 1);
         double out = a.distance3d(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 
     @Test
@@ -64,6 +65,6 @@ public class PointTest {
         Point a = new Point(8, 8, 8);
         Point b = new Point(1, 2, 3);
         double out = a.distance3d(b);
-        Assert.assertEquals(expected, out, 0.01);
+        assertEquals(expected, out, 0.01);
     }
 }
